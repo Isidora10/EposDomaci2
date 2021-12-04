@@ -1,0 +1,334 @@
+/* Padding svuda je 0 */
+* {
+    /* width: 98%; */
+    /* color: rgb(240, 67, 36); */
+    color: rgba(0, 0, 0, 0.692);
+
+    padding: 0;
+    margin: 0em;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+/* ################################################################ */
+
+/* Header */
+
+/* Header/Menu */
+.menu {
+    /* background: rgba(212, 9, 9, 0.829); */
+    background: rgba(212, 9, 9, 0.63);
+
+    /* overflow: hidden; */
+    width: 100%;
+    /* display: grid; */
+
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+    /*
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    float: left;
+    */
+    margin-right: 10px;
+    text-align: center;
+}
+
+/* Ne radi hmmmmmmmmmm */
+.menu ul li {
+    float: left;
+    list-style-type: none;
+    text-transform: uppercase;
+
+    padding: 10px;
+    /* color: #3f4e97; */
+    /* padding: 10px; */
+    /* width: 40%; */
+    margin-right: 10px;
+
+    padding-right: 32px;
+    padding-left: 32px;
+    display: block;
+    line-height: 80px;
+
+    /* Pravilo je razliku u izradi za uklanjanje hyperlinka, sad nije potrebno */
+    text-decoration: none;
+
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 21px;
+    color: #371c1c;
+}
+
+.menu ul a:link li {
+    color: #070604;
+    text-decoration: none;
+    color: white;
+}
+
+.menu ul li:hover {
+    /* background: rgba(15, 68, 117, 0.212); */
+    /* background-color: #d6bd2c86; */
+    background-color: rgba(246, 104, 53, 0.424);
+    text-decoration-color: thistle;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 100%;
+    width: 5%;
+    border-radius: 20%;
+    /* height: px; */
+    /* padding-top: ; */
+}
+/* ############################### */
+
+/* Header/logo i naziv */
+
+.logo {
+    background: rgba(212, 9, 9, 0.644);
+    display: flex;
+}
+
+.logo h1 {
+    color: rgba(235, 221, 34, 0.849);
+    padding-top: 5%;
+    font-family: monospace;
+}
+
+.logo img {
+    max-height: 100px;
+    max-width: 100px;
+    border-radius: 45%;
+}
+
+/* 
+*/
+
+/* ################################################################ */
+
+/* Footer */
+.feet {
+    /* background: rgba(160, 108, 24, 0.3); */
+    /* background: rgba(223, 171, 88, 0.466); */
+    /* overflow: hidden; */
+    /* background-color: rgba(170, 175, 175, 0.493); */
+    background: rgba(212, 9, 9, 0.63);
+    width: 100%;
+    height: 100%;
+}
+
+.kontaktfoot {
+    /* display: flex; */
+    padding: 30px;
+    flex-direction: row;
+    /* padding-right: 25px; */
+}
+
+.kontaktfoot button {
+    width: 33%;
+    font-size: 20px;
+    background-color: #ac3131;
+    border-radius: 20px;
+}
+
+.kontaktfoot button:hover {
+    background-color: rgba(255, 68, 0, 0.596);
+}
+/* ############################### */
+
+.col1 {
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 33.5%;
+    color: white;
+}
+
+/* ################################################################ */
+/* Content */
+
+.naslov {
+    width: 100%;
+    margin: 0 50px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Kartice */
+.cards {
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+    /* padding-right: 10%; */
+    /* padding-bottom: 50px; */
+
+    /* responsive */
+    width: 90%;
+    margin: auto;
+    padding-bottom: 100px;
+
+    /* background: rgba(0, 0, 255, 0.096); */
+}
+
+.card {
+    text-align: left;
+    display: grid;
+    grid-template-rows: max-content 10px 1fr;
+}
+
+.card:hover {
+    background: rgba(15, 68, 117, 0.212);
+    border-radius: 10%;
+    /* width: 20%; */
+    /* max-width: 400px; */
+    /* padding-bottom: 1%; */
+}
+
+.card:hover p {
+    font-size: 130%;
+}
+
+.card img {
+    object-fit: scale-down;
+    width: 75%;
+    height: 60%;
+    border-radius: 50%;
+}
+
+/* ############################### */
+/* Dugme za menjanje pozadine */
+.kontejner {
+    border: 2px solid #333;
+    width: 100px;
+}
+
+.color {
+    display: table-cell;
+    width: 50px;
+    height: 50px;
+    margin: 0 1px;
+    cursor: pointer;
+    border: 2px solid #fff;
+}
+
+.clr1 {
+    background-color: #750ffa;
+}
+
+.clr2 {
+    background-color: orange;
+}
+
+/* ################################################################ */
+/* O nama */
+
+.onama {
+    display: flex;
+    padding-left: 40px;
+    padding-right: 50px;
+    /* height: 25%; */
+}
+
+/*
+*/
+.onama img {
+    max-height: 720px;
+    padding-left: 100px;
+    padding-bottom: 100px;
+
+    /* scale: 80%; */
+}
+
+.onama p {
+    padding-top: 50px;
+    font-size: 30px;
+    max-width: 50%;
+    max-height: 100%;
+
+    text-align: left;
+}
+/* ################################################################ */
+/* Katalog */
+
+.katalog-wrap {
+    background-color: rgba(253, 223, 241, 0.473);
+    max-height: 50%;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    padding-bottom: 3%;
+    padding-top: 3%;
+}
+
+.katalog-wrap h1 {
+    padding-left: 100px;
+    width: 50%;
+}
+
+.fotos {
+    margin: 10px 30% 10px 30%;
+    flex: 50%;
+    display: grid;
+    border-radius: 40%;
+}
+
+/* ################################################################ */
+
+.kontakt {
+    padding: 10px;
+    background-color: rgba(193, 214, 250, 0.473);
+    padding-left: 10%;
+    padding-bottom: 3%;
+    padding-top: 2%;
+}
+
+input {
+    border-radius: 5px;
+    border: 3px solid #ccc;
+    font-size: 25px;
+}
+
+.kontakt p {
+    padding-bottom: 20px;
+}
+
+.kontakt button {
+    background-color: rgba(17, 79, 187, 0.473);
+    border-color: rgba(76, 134, 235, 0.712);
+    font-size: 20px;
+}
+
+label {
+    width: 25%;
+}
+
+label span {
+    font-size: 80%;
+}
+
+label.error {
+    color: red;
+    font-size: 80%;
+    display: block;
+    margin-top: 5px;
+}
+
+input.valid.success-alert {
+    border: 2px solid #4caf50;
+    color: green;
+}
+
+input.error {
+    border: 1px solid red;
+    font-weight: 300;
+    color: red;
+}
+
+[type="submit"],
+button {
+    margin-left: 0;
+    border-radius: 0;
+    background: black;
+    color: white;
+    border: none;
+    font-weight: 300;
+    padding: 10px 0;
+    line-height: 1;
+    width: 280px;
+}

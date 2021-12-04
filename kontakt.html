@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SHOP | Kontakt</title>
+
+        <!-- Ucitamo jquery preko CDN-a (Content Delivery Network) -->
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- Za validaciju -->    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+    </head>
+
+    <!-- Ucitavamo header i footer file preko jquery-ja -->
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+
+    <!-- Header -->
+    <div id="header"></div>
+
+    <body>
+        <div class="kontakt">
+            <form id="forma" action="" method="post">
+                <p id="info">Prijavite se na našu EMAIL listu putem forme:</p>
+                <br />
+                <p>
+                    <!-- Ne radi validacija za ime iz nekog razloga -->
+                    <label for="name"
+                        >Ime: <span>(Obavezno, bar 3 karaktera)</span></label
+                    >
+                    <br>
+                    <input for="name" ></input>
+                </p>
+
+                <p>
+                    <label for="age">Godine: <span>(min 18 godina)</span></label>
+                    <br>
+                    <input id="age" name="age" type="number">
+                </p>
+
+                <p>
+                    <label for="email">E-Mail: <span>(Obavezno)</span></label>
+                    <br>
+                    <input type="email" name="email" id="email">
+                </p>
+
+                <button type="submit" onclick="naVrh()">Registrujte se</button>
+            </form>
+        </div>
+    </body>
+
+    <script src="js/errorSkripta.js"></script>
+    <script src="js/skripta.js"></script>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+</html>

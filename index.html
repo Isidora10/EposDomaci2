@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SHOP | Pocetna</title>
+
+        <!-- Ucitamo jquery preko CDN-a (Content Delivery Network) -->
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
+    </head>
+
+    <!-- Hmmm, videcemo za ovo -->
+    <!-- Ucitavamo header i footer file preko jquery-ja -->
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+    <!-- Da bude responsive stavljamo ga u wrapper -->
+    <div class="responsive">
+        <!-- ... -->
+    </div>
+
+    <!-- Header -->
+    <div id="header"></div>
+
+    <h2 style="text-align: left; padding-left: 90px; font-size: 35px">
+        <img src="" alt="" />
+        <p>Prodavnica kompjuterskih dobara</p>
+        <img src="" alt="" />
+        <!-- Prazne slike kako bi dobili prostor, postoji i pametnije resenje, ali ovo je brze -->
+    </h2>
+
+    <!-- Karte -->
+    <body>
+        <div class="cards">
+            <a href="katalog.html">
+                <article class="card">
+                    <header>
+                        <h2 class="naslov">Gaming stolice</h2>
+                        <img src="img/stolica1.jpg" alt="slika stolica" />
+                        <div class="content">
+                            <p>
+                                Paragraf o stolicama. Najudobnije stolice na
+                                tržištu!
+                            </p>
+                        </div>
+                    </header>
+                </article>
+            </a>
+
+            <a href="katalog.html">
+                <article class="card">
+                    <header>
+                        <h2 class="naslov">Slušalice</h2>
+                        <img src="img/slusalice1.png" alt="slika slusalice" />
+                        <div class="content">
+                            <p>
+                                Paragraf o slušalicama. Najkvalitetniji zvuk po
+                                najboljoj ceni!
+                            </p>
+                        </div>
+                    </header>
+                </article>
+            </a>
+
+            <a href="katalog.html">
+                <article class="card">
+                    <header>
+                        <h2 class="naslov">Miševi</h2>
+                        <img src="img/mis3.png" alt="slika mis" />
+                        <div class="content">
+                            <p>
+                                Paragraf o miševima. Najkvalitetniji i
+                                najudobniji miševi!
+                            </p>
+                        </div>
+                    </header>
+                </article>
+            </a>
+
+            <a href="katalog.html">
+                <article class="card">
+                    <header>
+                        <h2 class="naslov">Tastature</h2>
+                        <img src="img/tastatura3.png" alt="slika mis" />
+                        <div class="content">
+                            <p>
+                                Paragraf o tastaturama. Mehaničke, tihe,
+                                gejmerske... Sve tastature na jednom mestu!
+                            </p>
+                        </div>
+                    </header>
+                </article>
+            </a>
+        </div>
+
+        <div class="kontejner">
+            Promenite boju pozadine:
+            <br />
+            <span id="1" onclick="color(this)" class="color clr1"></span>
+            <span id="2" onclick="color(this)" class="color clr2"></span>
+        </div>
+    </body>
+
+    <!-- Ucitamo skriptu -->
+    <script src="js/skripta.js"></script>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+</html>

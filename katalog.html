@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SHOP | Katalog</title>
+
+        <!-- Ucitamo jquery preko CDN-a (Content Delivery Network) -->
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- Za galeriju -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css"
+            rel="stylesheet"
+        />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+    </head>
+
+    <!-- Ucitavamo header i footer file preko jquery-ja -->
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+    <!-- Header -->
+    <div id="header"></div>
+
+    <body>
+        <div class="katalog-wrap" id="katalog">
+            <div class="fotos fotorama">
+                <img src="img/stolica1.jpg" alt="slika stolica" />
+                <img src="img/stolica2.jfif" alt="slika stolica" />
+                <img src="img/stolica3.jpg" alt="slika stolica" />
+                <img src="img/slusalice1.png" alt="slika slusalice" />
+                <img src="img/slusalice2.png" alt="slika slusalice" />
+                <img src="img/slusalice3.png" alt="slika slusalice" />
+                <img src="img/mis1.jpg" alt="slika misa" />
+                <img src="img/mis2.jpg" alt="slika misa" />
+                <img src="img/mis3.png" alt="slika misa" />
+                <img src="img/tastatura1.jpg" alt="slika tastature" />
+                <img src="img/tastatura2.jpg" alt="slika tastature" />
+                <img src="img/tastatura3.png" alt="slika tastature" />
+            </div>
+        </div>
+    </body>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+</html>

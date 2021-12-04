@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SHOP | O nama</title>
+
+        <!-- Ucitamo jquery preko CDN-a (Content Delivery Network) -->
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        ></script>
+    </head>
+
+    <!-- Ucitavamo header i footer file preko jquery-ja -->
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+    <!-- Header -->
+    <div id="header"></div>
+
+    <body>
+        <br /><br /><br />
+        <br />
+        <!-- <div class="onama"> -->
+        <article class="onama">
+            <p>
+                <b>Tekst o nama</b>
+                <br /><br />
+
+                Ukoliko želite da maksimalno iskoristite potencijal svog
+                računara ili laptopa, onda uz njega morate imati i adekvatnu
+                opremu. Kad je svaki klik važan, a brzina reagovanja tipki ili
+                miša presudna za igru, onda želite najbolju opremu. Kada želite
+                zvuk koji će vam dati osećaj kao da igrate igru u samom centru
+                dešavanja, možete se obratiti nama.
+                <br />
+                <br />
+                <b>Zašto baš mi?</b>
+                <br />
+                <br />
+                - Nudimo širok asortiman i izbor prilagođen zahtevu potrošača
+                <br />
+                - Najbolja cena i veliki izbor načina odloženog plaćanja
+                <br />
+                - Specijalizovani i dobro obučeni prodavci
+                <br />
+                Naš osnovni cilj je da kupcima i klijentima pružimo u svakom
+                momentu što više za uloženi novac, ceneći njihovo vreme i veru u
+                nas. Zauzvrat stičemo stalne klijente, partnere i saradnike. Za
+                sada smo u tome uspeli, a nastojaćemo da tako ostane i u
+                narednim godinama.
+            </p>
+
+            <!-- slika -->
+            <img src="img/logo.jpeg" alt="slika" />
+        </article>
+        <!-- </div> -->
+    </body>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+</html>
